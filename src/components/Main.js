@@ -5,9 +5,9 @@ import CityForm from './Form'
 const MainComponent = () => {
   return (
     <Container>
-      <Header as="h1" style={{marginTop: 30, marginBottom: 30}}>
+      <Header as="h1" style={{marginBottom: 30}}>
         Air Quality Comparison Tool
-        <Header.Subheader>Powered by the <a href="https://www.openaq.org" target="_blank" rel="noopener noreferrer">OpenAQ</a></Header.Subheader>
+        <Header.Subheader>Powered by <a href="https://www.openaq.org" target="_blank" rel="noopener noreferrer">OpenAQ</a></Header.Subheader>
       </Header>
       <Segment>
         <Grid columns='equal' stackable>

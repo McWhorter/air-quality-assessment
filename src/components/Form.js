@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Form } from 'semantic-ui-react'
+import { Button, Form, Icon } from 'semantic-ui-react'
 import { getCity } from '../utils/fetch'
 import Result from './Result'
 
@@ -50,7 +50,11 @@ const FormComponent = ({ label = 'Enter a city' }) => {
     <Form onSubmit={handleSubmit} loading={loading}>
       <Form.Input name="city" label={label} placeholder="eg. Tallahassee, or Salt Lake City" error={error} fluid />
       { data ? <Result cardData={data} /> : false }
-      <Button primary content="Fetch data" fluid />
+      {/* <Button primary content="Fetch data" fluid /> */}
+      <Button animated="vertical" primary fluid>
+        <Button.Content visible content="Fetch data" />
+        <Button.Content hidden content={<Icon name="shipping fast" />} />
+      </Button>
     </Form>
   )
 }

@@ -4,7 +4,7 @@ import Main from './components/Main'
 
 function App() {
   return (
-    <Container>
+    <Container style={{paddingTop: 30}}>
       <Main />
     </Container>
   );
