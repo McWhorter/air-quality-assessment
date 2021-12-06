@@ -6,10 +6,10 @@ const MainComponent = () => {
   return (
     <Container>
       <Header as="h1" style={{marginBottom: 30}}>
-        Air Quality Comparison Tool
+        Air Quality Assessment Tool
         <Header.Subheader>Powered by <a href="https://www.openaq.org" target="_blank" rel="noopener noreferrer">OpenAQ</a></Header.Subheader>
       </Header>
-      <Segment>
+      <Segment as="main">
         <Grid columns='equal' stackable>
           <Grid.Column>
             <CityForm label="Enter the first city" />
